@@ -17,7 +17,7 @@ ________________________________________________
 ## Abusing SeTrustedCredmanAccessPrivilege to dump user creds
 The program provides the ability to dump the stored credentials a user might have in the Windows Credential Manager. 
 
-It is a useful technique in cases were an elevated shell exists and multiple users are currently logged in.
+It is a useful technique in cases where an elevated shell exists and multiple users are currently logged in.
 
 ## Steps
 
