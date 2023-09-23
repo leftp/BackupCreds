@@ -1,4 +1,4 @@
-# backupcreds
+# BackupCreds
 
 ```
 ________________________________________________
@@ -15,7 +15,11 @@ ________________________________________________
 |______________________________________________|
 ```
 ## Abusing SeTrustedCredmanAccessPrivilege to dump user creds
-The program provides the ability to dump the stored credentials a user might have in the Windows Credential Manager. It is a useful technique in cases were an elevated shell exists and multiple users are currently logged in.
+The program provides the ability to dump the stored credentials a user might have in the Windows Credential Manager. 
+
+It is a useful technique in cases were an elevated shell exists and multiple users are currently logged in.
+
+## Steps
 
 1) Finds the right WinLogon process of the user we want to dump the creds
 2) Opens the WinLogon process with PROCESS_QUERY_LIMITED_INFORMATION access 
@@ -29,7 +33,8 @@ The program provides the ability to dump the stored credentials a user might hav
 10) Deletes the file
 
 ## Usage
-backupcreds [PID of target user] [path to save file]
+backupcreds ```[PID of target user]``` ```[path to save file]```
+
 Must be run from an elevated context.
 
 ## OPSEC
